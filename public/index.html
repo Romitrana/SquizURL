@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      rel="shortcut icon"
+      href="/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>SquizURL</title>
+  </head>
+  <body class="galaxy">
+    <div id="error">some error occurs</div>
+    <img id="logo" src="/images/SquizURLlogo-removebg.png" alt="logo" />
+    <h2>SquizURL</h2>
+    <div class="quotes">
+      <p id="quote">
+        If you want to make your dreams come true, the first thing you have to
+        do is wake up.
+      </p>
+      <h3 id="auther">--J.M. Power</h3>
+    </div>
+    <form>
+      <div>
+        <label>Long Url</label>
+        <input
+          type="url"
+          placeholder="Enter your long url here..."
+          id="longurl"
+        /><i id="shorturlbtn" class="fa-solid fa-angle-right" title="short url"></i>
+      </div>
+      <p id="loading-spinner" class="spinner"></p>
+      <div>
+        <label>Short Url</label>
+        <input
+          id="shorturl"
+          type="url"
+          placeholder="Shortened URL will be displayed here..."
+        /><i id="copyshortlink" class="fa-regular fa-copy" title="copy short link"></i>
+      </div>
+    </form>
+    <!-- stars -->
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
